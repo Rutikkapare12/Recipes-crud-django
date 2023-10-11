@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% block body %}
 
+
 <div class="container mt-5">
   <form
     class="col-6 mx-auto card p-3 shadow-lg"
@@ -18,9 +19,12 @@
         >Receipe description</label
       >
       <textarea
+        id="textarea"
         class="form-control"
         name="receipe_description"
         required
+        cols='30'
+        rows='5'
       ></textarea>
     </div>
     <div class="mb-3">

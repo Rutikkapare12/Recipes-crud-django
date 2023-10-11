@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    'base'
+    'base',
+    'django_extensions'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
@@ -125,6 +126,11 @@ USE_TZ = True
 import os
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_DIR = {
